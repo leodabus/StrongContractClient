@@ -1,5 +1,5 @@
 {
-  "originHash" : "4aadb974b990b486a6883392037ae54a1a3e5a73405154301474831cd181c309",
+  "originHash" : "09c7fc2ae9f3066a78da33fd3aadcdeb9c381500229a3bb7a648ffb376197a95",
   "pins" : [
     {
       "identity" : "async-http-client",
@@ -24,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/leodabus/Callable.git",
       "state" : {
-        "revision" : "c478379c060f9a730a83a300d18436e9794987c3",
-        "version" : "2.0.1"
+        "revision" : "feedcb17db415f17ffcc6f45d6f6fdde59510242",
+        "version" : "2.0.3"
       }
     },
     {
