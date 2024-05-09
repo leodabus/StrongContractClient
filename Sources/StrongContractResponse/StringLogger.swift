@@ -6,8 +6,8 @@
 //
 
 import Foundation
+#if !canImport(Vapor)
 import os
-
 extension String {
 
     public func logInfo() {
@@ -18,3 +18,4 @@ extension String {
         }
     }
 }
+#endif
