@@ -6,17 +6,12 @@
 //
 
 #if canImport(Vapor)
-import EncryptDecryptKey
+//import EncryptDecryptKey
 import Vapor
 import Callable
 
 extension Vapor.Request {
-    func decryptedData() throws -> Data {
-        guard let encryptedData = body.data?.data else {
-            throw Abort(.badRequest, reason: "body data not found")
-        }
-        return try encryptedData.decrypt()
-    }
+
 
     func codableBody<T: Codable>() throws -> T {
         guard let bodyData = body.data else { throw GenericError(text: "Body data was nil") }
