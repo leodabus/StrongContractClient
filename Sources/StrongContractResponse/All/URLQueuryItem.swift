@@ -4,14 +4,16 @@
 //
 //  Created by Scott Lydon on 4/6/24.
 //
-
 import Foundation
+
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 /// Needs an extension for Codable.
 extension URLQueryItem: Codable {
-    enum CodingKeys: String, CodingKey {
-        case name
-        case value
+    private enum CodingKeys: String, CodingKey {
+        case name, value
     }
 
     /// If this passes a Unit test, then it is safe.
