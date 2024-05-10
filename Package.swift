@@ -18,7 +18,6 @@ let package = Package(
         // Existing dependencies
         .package(url: "https://github.com/leodabus/Callable.git", .upToNextMajor(from: "2.0.3")),
         .package(url: "https://github.com/vapor/vapor.git", from: "4.0.0"),
-
     ],
     targets: [
         .target(

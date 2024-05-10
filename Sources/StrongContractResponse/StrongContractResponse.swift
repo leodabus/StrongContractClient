@@ -3,6 +3,9 @@
 
 import Foundation
 import Callable
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 public var defaultComponents: URLComponents = .init()
 public var defaultPath: String?

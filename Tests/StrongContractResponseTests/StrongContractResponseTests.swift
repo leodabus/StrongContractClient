@@ -1,7 +1,10 @@
 import XCTest
 import Callable
 @testable import StrongContractClient
-
+import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 struct MockResponse: Codable {
     var message: String
